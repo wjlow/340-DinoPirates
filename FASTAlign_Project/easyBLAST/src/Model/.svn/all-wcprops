@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/repos/!svn/ver/668/easyBLAST/src/Model
+END
+ShortReadScoreComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/512/easyBLAST/src/Model/ShortReadScoreComparator.java
+END
+AbstractAlignmentTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/633/easyBLAST/src/Model/AbstractAlignmentTool.java
+END
+ModelInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/665/easyBLAST/src/Model/ModelInterface.java
+END
+PreProcessingHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/668/easyBLAST/src/Model/PreProcessingHandler.java
+END
+BLASTTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/!svn/ver/633/easyBLAST/src/Model/BLASTTool.java
+END
+FileNameExtensionFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/562/easyBLAST/src/Model/FileNameExtensionFilter.java
+END
+Parameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/!svn/ver/633/easyBLAST/src/Model/Parameters.java
+END
+ShortReadComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/512/easyBLAST/src/Model/ShortReadComparator.java
+END
+BowtieTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/!svn/ver/634/easyBLAST/src/Model/BowtieTool.java
+END
+InputLine.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/!svn/ver/633/easyBLAST/src/Model/InputLine.java
+END
+ShortRead.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/!svn/ver/661/easyBLAST/src/Model/ShortRead.java
+END
+Group.java
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/!svn/ver/656/easyBLAST/src/Model/Group.java
+END

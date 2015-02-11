@@ -1,0 +1,91 @@
+package View.Input;
+
+import Model.Model;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import java.io.*;
+
+public class InputQualityPanel extends JPanel implements ActionListener {
+
+    JLabel      mainLabel;
+    JLabel      asciiStringLabel;
+    JTextField  asciiSumLimit;
+    JLabel      asciiMinLabel;
+    JTextField  asciiMinLimit;
+    JButton     removeBelowThreshold, saveFile;
+
+    JPanel      panel1, panel2, panel3, panel4;
+    Model m;
+
+    public InputQualityPanel(Model m)
+    {
+        this.m = m;
+        setLayout(new GridLayout(4,1));
+
+        panel1 = new JPanel(new FlowLayout());
+        add(panel1);
+        mainLabel = new JLabel("Specify your quality threshold here");
+        panel1.add(mainLabel);
+
+        panel2 = new JPanel(new FlowLayout());
+        add(panel2);
+        asciiMinLabel = new JLabel("Minimum ASCII Value: ");
+        asciiMinLimit = new JTextField(m.getMinASCII().toString(), 3);
+        panel2.add(asciiMinLabel);
+        panel2.add(asciiMinLimit);
+
+        panel3 = new JPanel(new FlowLayout());
+        add(panel3);
+        asciiStringLabel = new JLabel("Minimum ASCII Sum: ");
+        asciiSumLimit = new JTextField(m.getMinSum().toString(), 3);
+        panel3.add(asciiStringLabel);
+        panel3.add(asciiSumLimit);
+
+        panel4 = new JPanel(new FlowLayout());
+        add(panel4);
+        removeBelowThreshold = new JButton("Trim!");
+        saveFile = new JButton("Save Results");
+        panel4.add(removeBelowThreshold);
+        panel4.add(saveFile);
+
+        removeBelowThreshold.addActionListener(this);
+        saveFile.addActionListener(this);
+    }
+
+    public void actionPerformed(ActionEvent e)
+    {
+        if(e.getSource() == removeBelowThreshold)
+        {
+            for(int i =0; i<m.getInputLineList().size(); i++)
+            {
+                if (m.getInputLineList().get(i).getQualityMin() < Integer.parseInt(asciiMinLimit.getText())
+                        || m.getInputLineList().get(i).getQualitySum() < Integer.parseInt(asciiSumLimit.getText()))
+                {
+                    m.getInputLineList().remove(i);
+                    i--;
+                }
+            }
+            m.printDetailedShortReadList();
+        }
+
+        if(e.getSource() == saveFile)
+        {
+            String filename = m.getFile1().getName();
+
+            try {
+                FileWriter f0 = new FileWriter("C:\\" + filename + "_QUALITY_.txt", false);
+                for (int i =0; i<m.getInputLineList().size(); i++)
+                {
+                    System.out.print(m.printInputLine(i));
+                    f0.write(m.printInputLine(i));
+                }
+                f0.close();
+            }
+            catch(IOException ioe)
+            {
+
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+% ====================================================
+% PreProcessing Flow to the Document Chapter
+% ====================================================
+
+\chapter{Pre-Processing Flow}
+
+\section{Program Flow without the Paired-end file}
+
+\subsection{Input File Selection}
+
+\includegraphics[width=430pt,height=420pt]{figs/01}
+
+\subsection{Quality Threshold}
+
+\includegraphics[width=430pt,height=420pt]{figs/02}
+
+\subsection{ID Range Selection}
+
+\includegraphics[width=430pt,height=420pt]{figs/03}
+
+\subsection{Grouping of IDs}
+
+\includegraphics[width=430pt,height=420pt]{figs/04}
+
+Note: When two or more identifications are typed into one group,
+the identifications must be separated by a comma without any space.
+
+\subsection{Summary}
+
+\includegraphics[width=430pt,height=420pt]{figs/05}
+
+
+\section{Program Flow with the Paired-end file}
+
+\subsection{Input File Selection}
+
+\includegraphics[width=480pt,height=590pt]{figs/1p}
+
+\subsection{ID Range Selection}
+
+\includegraphics[width=480pt,height=590pt]{figs/3p}
+
+\subsection{Grouping of IDs}
+
+%\includegraphics[width=480pt,height=590pt]{figs/4p}
+
+\subsection{Summary}
+
+\includegraphics[width=480pt,height=590pt]{figs/5p}
+
+

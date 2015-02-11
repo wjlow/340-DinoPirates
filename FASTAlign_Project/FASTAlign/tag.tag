@@ -1,0 +1,3 @@
+3		ACGT
+2		TAGT
+1		CCGT

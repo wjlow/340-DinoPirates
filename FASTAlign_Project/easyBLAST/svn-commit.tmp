@@ -1,0 +1,10 @@
+Added FileNameExtensionFilter.java to support Mac. This allows our program
+to run on Mac with Java 1.5. 
+
+The view is changed from 800 to 840 since the region selection in reference
+file is clipped.
+--This line, and those below, will be ignored--
+
+A    src/Model/FileNameExtensionFilter.java
+M    src/Controller/RefFileSelectionListener.java
+M    src/View/View.java

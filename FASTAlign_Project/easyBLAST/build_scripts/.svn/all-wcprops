@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repos/!svn/ver/474/easyBLAST/build_scripts
+END
+checkstyle-all-5.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/410/easyBLAST/build_scripts/checkstyle-all-5.0.jar
+END
+lbang_check.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/474/easyBLAST/build_scripts/lbang_check.xml
+END
+junit-4.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/!svn/ver/410/easyBLAST/build_scripts/junit-4.5.jar
+END
+uispec4j-jdk6-2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/410/easyBLAST/build_scripts/uispec4j-jdk6-2.0.jar
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/!svn/ver/403/easyBLAST/build_scripts/build.xml
+END

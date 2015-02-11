@@ -1,0 +1,44 @@
+% ====================================================
+% Introduction to the Document Chapter
+% ====================================================
+
+\chapter{Introduction}
+
+\section{Project Overview}
+
+\subsection {The Client}
+
+\subsection{Users of the System}
+The main users of the system will be:
+\begin{itemize}
+\item{biologists}
+\item{statisticians}
+\item{clinicians}
+\item{bioinformaticians}
+\end{itemize}
+
+All users are expected to have prior basic computer knowledge as well as
+sufficient knowledge in their field to BLAST sequences. 
+Users are also expected to know the following information.
+\begin{itemize}
+\item{Names and location of input and reference files}
+\item{If an input file has a paired end}
+\item{Values to set the quality threshold}
+\item{Groups that should be formed}
+\item{Unique identification region}
+\item{Columns for the output table}
+\item{BLAST region in the input and reference files}
+\item{Parameter values for BLASTing}
+\item{Number of threads}
+\item{Location to save files} 
+\end{itemize}
+
+
+\section{Audience of the Document}
+
+This document is targeted towards the users so that the users will be easily be
+able to adapt to the new system to pre-process and BLAST DNA sequences.
+The document is also meant for the maintenance team and the client to refer to in the future so they will have a good understanding of the system for when are to explain and demonstrate the system to new users. 
+
+\section{Document Preview}
+

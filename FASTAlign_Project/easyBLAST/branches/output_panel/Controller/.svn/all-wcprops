@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/264/easyBLAST/branches/output_panel/Controller
+END
+ReferenceTabChangeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/264/easyBLAST/branches/output_panel/Controller/ReferenceTabChangeListener.java
+END
+InputTabChangeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/264/easyBLAST/branches/output_panel/Controller/InputTabChangeListener.java
+END
+Controller.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/264/easyBLAST/branches/output_panel/Controller/Controller.java
+END
+InputPanelListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/264/easyBLAST/branches/output_panel/Controller/InputPanelListener.java
+END
+ReferenceFileParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/264/easyBLAST/branches/output_panel/Controller/ReferenceFileParser.java
+END
+InputFileParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/264/easyBLAST/branches/output_panel/Controller/InputFileParser.java
+END
+QualityListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/264/easyBLAST/branches/output_panel/Controller/QualityListener.java
+END

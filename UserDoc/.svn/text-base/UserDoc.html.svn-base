@@ -1,0 +1,326 @@
+<html>
+<head>
+  <title>FASTAlign User Documentation</title>
+</head>
+
+<body>
+  <table border="0" width="800">
+  <tr>
+  <td>
+  
+  <!-- Table of Contents -->
+  <h1><a name="top">Table of Contents</a></h1>
+  <p>Click any of the following links to jump to the relevant sections.</p>
+  <ol type="i">
+    <li><a href="#getstart">Getting Started</a></li>
+    <li><a href="#modeselect">Mode Selection Screen</a></li>
+    <li><a href="#preprocess">Pre-Processing Flow Quick-Start Guide</a></li>
+    <li><a href="#alignment">Alignment Flow Quick-Start Guide</a></li>
+    <li><a href="#output">Output Generated</a></li>
+    <li><a href="#issues">Known Issues</a></li>
+  </ol>
+  
+  <!-- Getting Started -->
+  <h1><a name="getstart"><u>i. Getting Started</u></a></h1>
+  <p>Before executing FASTAlign program, place a copy of the BLAST executables
+  in C:\Documents and Settings\[USER]\FASTAlign\bin .</p>
+  <p>Ensure that Java 1.6 is installed, and double click FASTAlign.jar
+  to run the program.</p>
+  <p>Note that this program is most stable with Windows XP.</p>
+  
+  <a href="./figs/getstarted.png" target="_blank">
+  <img width="160" height="150" src="./figs/getstarted.png"/></a>
+  
+  <h1><a name="modeselect"><u>ii. Mode Selection Screen</u></a></h1>
+  <p>Press 'Pre-processing Flow' to run the Pre-processing Flow for 
+  quality filtering query files and also to split them into groups.</p>
+  <a href="./figs/00.png" target="_blank">
+  <img width="360" height="100" src="./figs/00.png"/></a>
+  
+  <!-- Pre-Processing Flow -->
+  <h1><a name="preprocess">iii. <u>Pre-Processing Flow</u></a></h1>
+  <p>The Pre-Processing Flow is chosen to filter query files based on a specified
+  quality threshold, and to separate query files into several groups.</p>
+  
+  <ol>
+  
+  <li><h2>No paired end file</h2></li>
+  <p>This section demonstrates how to use the system if no paired end file is
+  to be selected.</p>
+  
+  <h3>Query File Selection</h3>
+  <p>Press the 'Browse' button and choose a query file with .txt extension.</p>
+  <a href="./figs/01.png" target="_blank">
+  <img width="160" height="150" src="./figs/01.png"/></a>
+  
+  <h3>Quality Threshold Specification</h3>
+  <p>Put a quality threshold into each field. Every line of the query file will
+  need to have a quality higher than both the provided values in order to not
+  be filtered out.</p>
+  
+  <p>Press 'Save Results' if you want to save the quality filtered files. They
+  are generated regardless, but if the button is not pressed, the files will be
+  removed.</p>
+  
+  <a href="./figs/02.png" target="_blank">
+  <img width="160" height="150" src="./figs/02.png"/></a>
+  
+  <h3>ID Region Selection</h3>
+  <p>If you want to split the query file into groups, press 'Yes' at the
+  following prompt, otherwise press 'No' and you will be brought to the
+  Summary screen.</p>
+  
+  <a href="./figs/03.png" target="_blank">
+  <img width="160" height="150" src="./figs/03.png"/></a>
+  
+  <p>Select a region, using a mouse, from the first shortread that represents 
+  the identification of that system. If the selected region is wrong, simply 
+  reselect another region. The previously selected region will be cleared.</p>
+  
+  <a href="./figs/04.png" target="_blank">
+  <img width="160" height="150" src="./figs/04.png"/></a>
+  
+  <h3>Grouping of IDs</h3>
+  <p>Type the identifications that belong to each group. Press 'Add Group' to
+  add a new group, and 'Remove Group' to remove groups from bottom up. Separate
+  identifications with a comma (,).</p>
+  
+  <p>One wildcard can be used to specify identifications. 'A*TT' would expand 
+  to 'AATT', 'ACTT', 'AGTT' and 'ATTT'. No more than one wildcard can be used
+  for each identification.</p>
+  
+  <a href="./figs/05.png" target="_blank">
+  <img width="160" height="150" src="./figs/05.png"/></a>
+  
+  <h3>Summary Screen</h3>
+  <p>A summary of the user's selections from before this screen will be seen
+  here before any actual processing is done. Press the 'Pre-Process' button
+  to begin quality-filtering and grouping the selected query file. This process
+  can take up to 30 minutes depending on the specs of the computer.</p>
+  
+  <a href="./figs/06.png" target="_blank">
+  <img width="160" height="150" src="./figs/06.png"/></a>
+  
+  <p><a href="#top">Go back to the top of the page.</a></p>
+  <br>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li><h2>Paired end file exists</h2></li>
+  <p>This section demonstrates how to use the system if a paired end file is
+  to be selected.</p>
+  
+  <h3>Query Files Selection</h3>
+  <p>Press the 'Browse' button and choose a query file with .txt extension.
+  Tick the checkbox and select another query file in the same fashion. 
+  The query files must be paired and of the same number of lines.</p>
+  <a href="./figs/01a.png" target="_blank">
+  <img width="160" height="150" src="./figs/01a.png"/></a>
+  
+  <h3>Quality Threshold Specification</h3>
+  <p>Put a quality threshold into each field. Every line of the query file will
+  need to have a quality higher than both the provided values in order to not
+  be filtered out.</p>
+  
+  <p>Press 'Save Results' if you want to save the quality filtered files. They
+  are generated regardless, but if the button is not pressed, the files will be
+  removed.</p>
+  
+  <a href="./figs/02.png" target="_blank">
+  <img width="160" height="150" src="./figs/02.png"/></a>
+  
+  <h3>ID Region Selection</h3>
+  <p>If you want to split the query files into groups, press 'Yes' at the
+  following prompt, otherwise press 'No' and you will be brought to the
+  Summary screen.</p>
+  
+  <a href="./figs/03a.png" target="_blank">
+  <img width="160" height="150" src="./figs/03a.png"/></a>
+  
+  <p>Select a region, using a mouse, from either the first shortread of the
+  first file (left column) or the first shortread of the second file (right 
+  column). This region represent the identification of the shortreads of the
+  selected file and the shortreads from the paired file too. If the selected 
+  region is wrong, simply reselect another region. The previously selected 
+  region will be cleared.</p>
+  
+  <a href="./figs/04a.png" target="_blank">
+  <img width="160" height="150" src="./figs/04a.png"/></a>
+  
+  <a href="./figs/04b.png" target="_blank">
+  <img width="160" height="150" src="./figs/04b.png"/></a>
+  
+  <h3>Grouping of IDs</h3>
+  <p>Type the identifications that belong to each group. Press 'Add Group' to
+  add a new group, and 'Remove Group' to remove groups from bottom up. Separate
+  identifications with a comma (,).</p>
+  
+  <p>One wildcard can be used to specify identifications. 'A*TT' would expand 
+  to 'AATT', 'ACTT', 'AGTT' and 'ATTT'. No more than one wildcard can be used
+  for each identification.</p>
+  
+  <a href="./figs/05.png" target="_blank">
+  <img width="160" height="150" src="./figs/05.png"/></a>
+  
+  <h3>Summary Screen</h3>
+  <p>A summary of the user's selections from before this screen will be seen
+  here before any actual processing is done. Press the 'Pre-Process' button
+  to begin quality-filtering and grouping the selected query file. This process
+  can take up to 30 minutes depending on the specs of the computer.</p>
+  
+  <a href="./figs/06a.png" target="_blank">
+  <img width="160" height="150" src="./figs/06a.png"/></a>
+  
+  <p><a href="#top">Go back to the top of the page.</a></p>
+  
+  </ol>
+  
+  
+  
+  
+  
+  
+  <!-- Alignment Flow -->
+  <h1><a name="alignment">iv. <u>Alignment Flow</u></a></h1>
+  <p>The Alignment Flow is chosen to run a selected alignment tool to align an
+  query file with a set of reference files. The output from the alignment tool
+  will be displayed at the end of the flow.</p>
+  
+  <p>Note that the screens taken for this section may not reflect what you 
+  see exactly (for example the placement of the 'Next' buttons) because 
+  these screens are from an older version of the program.
+  
+  <ol>
+  <li><h2>Query Files Tab</h2></li>
+  
+  <h3>Query File Selection</h3>
+  <p>Press the 'Browse' button and choose a query file with .txt extension.</p>
+  
+  <a href="./figs/101.png" target="_blank">
+  <img width="160" height="150" src="./figs/101.png"/></a>
+  
+  <h3>ID Region Selection</h3>
+  <p>Select a region, using a mouse, from the first shortread that represents 
+  the identification of that system. If the selected region is wrong, simply 
+  reselect another region. The previously selected region will be cleared.</p>
+  
+  <a href="./figs/102.png" target="_blank">
+  <img width="160" height="150" src="./figs/102.png"/></a>
+  
+  <h3>Alignment Region Selection</h3>
+  <p>This screen is for selecting the region from the query file to use for
+  alignment. The process is similar to the previous step.</p>
+  
+  <a href="./figs/103.png" target="_blank">
+  <img width="160" height="150" src="./figs/103.png"/></a>
+  
+  <li><h2>Reference Files Tab</h2></li>
+  
+  <h3>Reference File Selection</h3>
+  <p>Press the 'Browse' button and choose a reference file with .csv extension. 
+  Press 'Add Reference File' to add another reference file, or 'Remove Reference
+  File' to remove reference files from bottom up. A maximum of five reference
+  files can be selected.</p>
+  
+  <a href="./figs/104.png" target="_blank">
+  <img width="160" height="150" src="./figs/104.png"/></a>
+  
+  <h3>Column Chooser</h3>
+  <p>Tick the checkboxes beside any header that you want to write into the 
+  reference FASTA file.</p>
+  
+  <a href="./figs/105.png" target="_blank">
+  <img width="160" height="150" src="./figs/105.png"/></a>
+  
+  <h3>Column Header Selection</h3>
+  <p>Using the combo boxes, specify the column header that represents the
+  unique ID and full hairpin sequence respectively.</p>
+  
+  <a href="./figs/106.png" target="_blank">
+  <img width="160" height="150" src="./figs/106.png"/></a>
+  
+  <h3>Alignment Region Selection</h3>
+  <p>This screen is for selecting the region from the reference file(s) to use 
+  for alignment. The process is similar to the same process for the query file.
+  </p>
+  
+  <a href="./figs/107.png" target="_blank">
+  <img width="160" height="150" src="./figs/107.png"/></a>
+  
+  <li><h2>Alignment Tab</h2></li>
+  
+  <h3>iv. Alignment Tool Selection</h3>
+  <p>Choose the alignment tool to be used.</p>
+  
+  <a href="./figs/108.png" target="_blank">
+  <img width="160" height="150" src="./figs/108.png"/></a>
+  
+  <h3>Parameters Specification</h3>
+  <p>Put in the values for each parameter of the alignment tool selected. The
+  values that exist in each field at the moment are default values. Also 
+  specify the number of cores to run the alignment tool using.</p>
+
+  <h3>Summary Screen</h3>
+  <p>A summary of the user's selections from the alignment flow before this 
+  screen will be seen here before the alignment tool is run. Press the 
+  'Alignment' button to begin running the alignment tool.</p>
+  
+  <li><h2>Output Tab</h2></li>
+  
+  <p>The output from the alignment tool is displayed here. The output can be
+  saved to a .csv file by pressing the 'Save Output'.</p>
+  
+  <p><a href="#top">Go back to the top of the page.</a></p>
+
+  </ol>
+  
+  <!-- Output Generated -->
+  <h1><a name="output"><u>v. Output Generated</u></a></h1>
+  
+  <p> The files generated by FASTAlign will be in FASTAlign_run folder. This folder 
+  is will be generated in the same folder where FASTAlign.jar is placed.</p>
+  
+  <p>In FASTAlign_run folder, the output is placed in folder created named according
+  to the date and the time it was executed. For example, 20091030_154942 is
+  [YYYYMMDD_HHMMSS]</p>
+  
+  
+  <!-- Known Issues -->
+  <h1><a name="issues">vi. <u>Known Issues</u></a></h1>
+  <p>The system has several known issues, which are documented as follows:</p>
+  
+  <ol>
+  <li><h2>Output screen only displays output from BLAST</h2></li>
+  <p>BLAST is the only alignment tool that the output screen supports. Other
+  alignment tools have different formatted output, which the program does not
+  deal with.</p>
+  
+  <li><h2>Bug in preview screen for paired end query files</h2></li>
+  <p>When the query files are less than 20 lines, the first few lines of the
+  second selected query file will be shown in the textfields for the first
+  file. This is merely a cosmetic error.</p>  
+  
+  <li><h2>Bug in preview screen for single query file if file is less than 
+  20 lines</h2></li>
+  <p>If the query file has less than 20 lines, the preview screen will only
+  display half the lines.</p>
+    
+  <li><h2>Very rarely, tag files will not be generated for the Pre-processing
+  Flow</h2></li>
+  <p>At the end of the Pre-processing Flow, sometimes the files are all
+  generated properly except for the tag files. There is also no pop-up box
+  to say that pre-processing is complete because an error happened. 
+  This issue happens very rarely.</p>
+  </ol>
+  
+  </td>
+  </tr>
+  </table>
+</body>
+</html>
